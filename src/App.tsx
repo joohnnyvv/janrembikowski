@@ -1,18 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import {useTranslation} from "react-i18next";
+import React, {useEffect, useState} from 'react';
+import { useAtom } from 'jotai';
+import {currentThemeAtom, themeAtom} from './atoms/theme';
+import {themes} from "./consts/theme";
+import {NavBar} from "./components/NavBar";
+import {WelcomePage} from "./components/WelcomePage";
 
 function App() {
-  const { t, i18n } = useTranslation();
+  const [theme] = useAtom(themeAtom);
+  const [currentTheme, setCurrentTheme] = useAtom(currentThemeAtom);
 
-  const changeLanguage = (lng: string | undefined) => {
-    i18n.changeLanguage(lng);
-  };
+  useEffect(() => {
+    setCurrentTheme(themes[theme])
+  }, [theme]);
 
-  return (
-      <div className='w-screen h-14 bg-indigo-400'>
-      </div>
-  );
+    return (
+        <div className={`min-h-screen w-screen ${currentTheme.background}`}>
+          <NavBar />
+            <WelcomePage />
+        </div>
+    );
 }
 
 export default App;

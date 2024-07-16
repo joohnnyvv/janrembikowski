@@ -1,4 +1,7 @@
 {
-  "welcome": "Witamy",
-  "description": "To jest przykładowy opis"
+  "navbar": {
+    "contact": "skontaktuj się",
+    "english": "zmień język na angielski",
+    "polish": "zmień język na polski"
+  }
 }

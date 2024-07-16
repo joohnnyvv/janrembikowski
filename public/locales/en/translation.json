@@ -1,4 +1,7 @@
 {
-  "welcome": "Welcome",
-  "description": "This is an example description"
+  "navbar": {
+    "contact": "contact me",
+    "english": "change to english",
+    "polish": "change to polish"
+  }
 }
