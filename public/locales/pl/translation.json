@@ -3,5 +3,9 @@
     "contact": "skontaktuj się",
     "english": "zmień język na angielski",
     "polish": "zmień język na polski"
+  },
+  "welcomePage": {
+    "presentation": "Cześć, jestem {{name}}",
+    "bio": "> fullstack developer i muzyk, łączący zamiłowanie do programowania i kreatywność, by tworzyć niekonwencjonalne cyfrowe doświadczenia."
   }
 }

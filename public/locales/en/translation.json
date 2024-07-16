@@ -3,5 +3,9 @@
     "contact": "contact me",
     "english": "change to english",
     "polish": "change to polish"
+  },
+  "welcomePage": {
+    "presentation": "Hello, I'm {{name}}",
+    "bio": "> fullstack developer and musician, combining programming and creativity to create complex digital experiences."
   }
 }
