@@ -30,7 +30,7 @@ export function Projects() {
             animate="animate"
             exit="exit"
             variants={variants}
-            className={`w-screen min-h-screen pb-16 pt-28 flex flex-col gap-16 justify-center items-center lg:items-start relative ${currentTheme.background}`}
+            className={`w-screen min-h-screen pb-16 pt-28 flex flex-col gap-16 justify-center items-center lg:items-start overflow-x-hidden relative ${currentTheme.background}`}
             onAnimationComplete={() => setInitAnimComplete(true)}
         >
             <ParallaxText baseVelocity={2}>
@@ -60,7 +60,7 @@ export function Projects() {
             <ParallaxText baseVelocity={2}>
                 COMMERCIAL PROJECTS
             </ParallaxText>
-            <div className={`w-screen px-6 md:px-24 lg:px-64`}>
+            <div className={`w-screen px-1 md:px-24 lg:px-64`}>
                 <ProjectCard/>
             </div>
         </motion.div>
