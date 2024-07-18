@@ -1,4 +1,9 @@
 {
+  "pageHeader": {
+    "home": "home",
+    "stack": "skills",
+    "projects": "projects"
+  },
   "navbar": {
     "contact": "contact me",
     "english": "change to english",
@@ -7,5 +12,42 @@
   "welcomePage": {
     "presentation": "Hello, I'm {{name}}",
     "bio": "> fullstack developer and musician, combining programming and creativity to create complex digital experiences."
+  },
+  "projects": {},
+  "stack": {
+    "frontend": "> Frontend",
+    "backend": "> Backend",
+    "mobile": "> Mobile",
+    "testing": "> Testing",
+    "machineLearning": "> Machine Learning & Data Science",
+    "devOps": "> DevOps & Cloud",
+    "tools": "> Tools & Methodologies",
+    "desc": {
+      "react": "> javascript library for building user interfaces",
+      "reactNative": "> framework for building native apps using react",
+      "angular": "> platform for building mobile and desktop web applications",
+      "typeScript": "> typed superset of javascript that compiles to plain javascript",
+      "cypress": "> end-to-end testing framework for web applications",
+      "java": "> high-level programming language used for building applications",
+      "springBoot": "> framework for building java-based enterprise applications",
+      "jpa": "> java persistence api for database operations",
+      ".net": "> framework for building windows applications",
+      "python": "> high-level programming language for general-purpose programming",
+      "fastAPI": "> modern, fast web framework for building apis with python",
+      "postman": "> tool for testing and documenting apis",
+      "android": "> mobile operating system developed by google",
+      "kotlin": "> modern programming language for android development",
+      "jetpackCompose": "> modern toolkit for building native ui on android",
+      "scikit-learn": "> machine learning library for python",
+      "sciPy": "> python library for scientific computing",
+      "azure": "> cloud computing service by microsoft",
+      "aws": "> cloud computing service by amazon",
+      "kubernetes": "> open-source system for automating deployment, scaling, and management of containerized applications",
+      "docker": "> platform for developing, shipping, and running applications in containers",
+      "bitbucket": "> git repository management solution",
+      "jira": "> project management tool for agile teams",
+      "scrum": "> agile framework for managing complex projects",
+      "jetBrainsIDEs": "> integrated development environments by jetbrains"
+    }
   }
 }

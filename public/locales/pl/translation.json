@@ -1,4 +1,9 @@
 {
+  "pageHeader": {
+    "home": "home",
+    "stack": "umiejętności",
+    "projects": "projekty"
+  },
   "navbar": {
     "contact": "skontaktuj się",
     "english": "zmień język na angielski",
@@ -7,5 +12,42 @@
   "welcomePage": {
     "presentation": "Cześć, jestem {{name}}",
     "bio": "> fullstack developer i muzyk, łączący zamiłowanie do programowania i kreatywność, by tworzyć niekonwencjonalne cyfrowe doświadczenia."
+  },
+  "stack": {
+    "stack": "stack technologiczny",
+    "frontend": "> Frontend",
+    "backend": "> Backend",
+    "mobile": "> Aplikacje mobilne",
+    "testing": "> Testy",
+    "machineLearning": "> Uczenie Maszynowe & Data Science",
+    "devOps": "> DevOps & Usługi Chmurowe",
+    "tools": "> Narzędzia i metodologie",
+    "desc": {
+      "react": "> biblioteka javascript do budowania interfejsów użytkownika",
+      "reactNative": "> framework do budowania natywnych aplikacji przy użyciu react",
+      "angular": "> platforma do tworzenia mobilnych i desktopowych aplikacji internetowych",
+      "typeScript": "> typed superset of javascript that compiles to plain javascript",
+      "cypress": "> kompleksowy framework do testowania aplikacji internetowych",
+      "java": "> język programowania wysokiego poziomu używany do tworzenia aplikacji",
+      "springBoot": "> framework do budowania aplikacji korporacyjnych opartych na języku java",
+      "jpa": "> java persistence api for database operations",
+      ".net": "> framework do budowania aplikacji windowsowych",
+      "python": "> język programowania wysokiego poziomu do programowania ogólnego przeznaczenia",
+      "fastAPI": "> nowoczesny, szybki framework webowy do budowania apis z pythonem",
+      "postman": "> narzędzie do testowania i dokumentowania apis",
+      "android": "> mobilny system operacyjny opracowany przez google",
+      "kotlin": "> nowoczesny język programowania dla Androida",
+      "jetpackCompose": "> nowoczesny zestaw narzędzi do tworzenia natywnego interfejsu użytkownika na Androida",
+      "scikit-learn": "> biblioteka uczenia maszynowego dla Pythona",
+      "sciPy": "> biblioteka python do obliczeń naukowych",
+      "azure": "> usługa przetwarzania w chmurze firmy microsoft",
+      "aws": "> usługa przetwarzania w chmurze firmy amazon",
+      "kubernetes": "> system open-source do automatyzacji wdrażania, skalowania i zarządzania aplikacjami kontenerowymi",
+      "docker": "> platforma do tworzenia, wysyłki i uruchamiania aplikacji w kontenerach",
+      "bitbucket": "> rozwiązanie do zarządzania repozytoriami git",
+      "jira": "> narzędzie do zarządzania projektami dla zwinnych zespołów",
+      "scrum": "> zwinny framework do zarządzania złożonymi projektami",
+      "jetBrainsIDEs": "> zintegrowane środowiska programistyczne firmy jetbrains"
+    }
   }
 }
