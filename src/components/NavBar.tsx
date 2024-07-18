@@ -8,6 +8,8 @@ import {motion} from "framer-motion";
 import {Link} from "react-router-dom";
 import {ReactTyped} from "react-typed";
 import {MdDarkMode, MdOutlineDarkMode} from "react-icons/md";
+import {FaLanguage} from "react-icons/fa";
+import i18n, {changeLanguage} from "i18next";
 
 export function NavBar(props: { header: string }) {
     const {t} = useTranslation();
@@ -16,7 +18,7 @@ export function NavBar(props: { header: string }) {
 
     return (
         <div
-            className={`w-screen z-10 h-20 ${currentTheme.background} flex flex-row justify-between px-8 md:px-24 py-5 items-center fixed`}>
+            className={`w-screen z-10 h-20 ${currentTheme.background} flex flex-row justify-between px-4 md:px-24 py-5 items-center fixed`}>
             <div className={`flex items-center ${currentTheme.text} gap-4`}>
                 <Link to={'/'}>
                     <AiFillCode color={currentTheme.iconColor} size={50}/>
@@ -32,14 +34,14 @@ export function NavBar(props: { header: string }) {
             </h1>
             <div className={`flex gap-4`}>
                 <motion.div whileHover={{scale: 1.1}} className='flex items-center mt-0 gap-4'>
-                    {/*<FaLanguage*/}
-                    {/*    onClick={() => {*/}
-                    {/*        changeLanguage(i18n.language === 'en' ? 'pl' : 'en');*/}
-                    {/*    }}*/}
-                    {/*    size={40}*/}
-                    {/*    className={`${currentTheme.text} cursor-pointer`}*/}
-                    {/*/>*/}
-                    <a href='/jan rembikowski cv.pdf' download='/jan rembikowski cv.pdf'><TbFileCv size={40}
+                    <FaLanguage
+                        onClick={() => {
+                            changeLanguage(i18n.language === 'en' ? 'pl' : 'en');
+                        }}
+                        size={25}
+                        className={`${currentTheme.text} cursor-pointer`}
+                    />
+                    <a href='/jan rembikowski cv.pdf' download='/jan rembikowski cv.pdf'><TbFileCv size={25}
                                                                                                    className={`${currentTheme.text} cursor-pointer`}/></a>
                 </motion.div>
                 <motion.div whileHover={{scale: 1.1}} className='flex items-center mt-0 gap-4'>
@@ -48,7 +50,7 @@ export function NavBar(props: { header: string }) {
                             onClick={() => {
                                 setTheme('dark')
                             }}
-                            size={40}
+                            size={25}
                             className={`${currentTheme.text} cursor-pointer`}
                         />
                     ) : (
@@ -56,7 +58,7 @@ export function NavBar(props: { header: string }) {
                             onClick={() => {
                                 setTheme('light')
                             }}
-                            size={40}
+                            size={25}
                             className={`${currentTheme.text} cursor-pointer`}
                         />
                     )}
