@@ -13,6 +13,15 @@
     "presentation": "Cześć, jestem {{name}}",
     "bio": "> fullstack developer i muzyk, łączący zamiłowanie do programowania i kreatywność, by tworzyć niekonwencjonalne cyfrowe doświadczenia."
   },
+  "projects": {
+    "desc": {
+      "ableton": "Ableton Setlist Manager to oparta na React aplikacja webowa zaprojektowana do współpracy z serwerem Setlist Management Server w celu zarządzania setlistami i kontrolowania odtwarzania w Ableton Live. Zapewnia intuicyjny interfejs użytkownika do interakcji z Ableton Live i uzyskiwania dostępu do aktualizacji w czasie rzeczywistym za pośrednictwem komunikacji WebSocket.",
+      "fish": "Gra mobilna na platformę Android pozwalająca odkrywać alternatywną wodną rzeczywistość pełną potworów i nagród. Rozgrywka polega na chodzeniu po okolicy i unikaniu wodnych potworów, aplikacja została stworzona przy użyciu Google Maps API.",
+      "breath": "BreathGuard to aplikacja internetowa napisana w technologii React, która wykorzystuje model uczenia maszynowego do przewidywania ryzyka zachorowania na raka płuc. Model uczenia maszynowego został stworzony i przeszkolony w ramach projektu zaliczeniowego.",
+      "ascii": "Prosta aplikacja w Pythonie, która konwertuje obrazy na fajną grafikę ASCII. Konwertuje obrazy w różnych formatach (np. JPG, PNG) na tekstową reprezentację ASCII i zapisuje wygenerowaną grafikę ASCII do pliku .txt.",
+      "library": "Jest to aplikacja internetowa zbudowana przy użyciu React i React Bootstrap, która pozwala zarządzać biblioteką. Wszystkie dane są przechowywane lokalnie w Local Storage przeglądarki. Korzysta z publicznego API, udostępniając tysiące książek.",
+      "y": "Aplikacja podobna do X składająca się z aplikacji mobilnej, aplikacji webowej i backendu napisanego w języku Java. Wdrożenie na platformę Azure odbyło się za pośrednictwem rejestru kontenerów. Zaimplementowaliśmy WebSocket umożliwiający aktualizację komentarzy w czasie rzeczywistym."
+    },
   "stack": {
     "stack": "stack technologiczny",
     "frontend": "> Frontend",

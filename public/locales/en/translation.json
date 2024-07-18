@@ -13,7 +13,16 @@
     "presentation": "Hello, I'm {{name}}",
     "bio": "> fullstack developer and musician, combining programming and creativity to create complex digital experiences."
   },
-  "projects": {},
+  "projects": {
+    "desc": {
+      "ableton": "The Ableton Setlist Manager is a React-based client application designed to work in tandem with the Setlist Management Server for managing setlists and controlling playback in Ableton Live. It provides an intuitive user interface for interacting with Ableton Live and accessing real-time updates through WebSocket communication.",
+      "fish": "A mobile game for the android platform allowing you to explore an alternative aquatic reality full of monsters and rewards. The gameplay involves walking around the neighborhood and avoiding water monsters, the application was developed using the Google Maps API.",
+      "breath": "BreathGuard is a react web application that uses a machine learning model to predict lung cancer risk. The graphical interface is provided through an application written in React. The machine learning model was created and trained as a college credit project.",
+      "ascii": "A simple Python application that converts images into cool ASCII art. Converts images of various formats (e.g., JPG, PNG) into text-based ASCII image representation and saves the generated ASCII art to a .txt file.",
+      "library": "This is a web application built using React and React Bootstrap that allows you to manage library. All data is stored locally in your browser's Local Storage. It uses a public API, making thousands of books available.",
+      "y": "An X-like application consisting of a mobile app, a web app and a backend written in java. Deployment to Azure was done via container registry. We implemented WebSocket allowing real-time comment updates."
+    }
+  },
   "stack": {
     "frontend": "> Frontend",
     "backend": "> Backend",

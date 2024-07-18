@@ -4,6 +4,7 @@ import {useAtom} from "jotai/index";
 import {currentThemeAtom, themeAtom} from "../atoms/theme";
 import {ReactTyped} from "react-typed";
 import React from "react";
+import {useTranslation} from "react-i18next";
 
 export function ProjectAccordion(props: {
     project: Project,
@@ -16,6 +17,7 @@ export function ProjectAccordion(props: {
     const [currentTheme] = useAtom(currentThemeAtom);
     const [theme, setTheme] = useAtom(themeAtom);
     const [expandComplete, setExpandComplete] = React.useState(false);
+    const {t, i18n} = useTranslation();
 
     return (
         <div className={`flex w-full flex-col`}>
@@ -65,7 +67,7 @@ export function ProjectAccordion(props: {
                                             y: 0,
                                             opacity: 1
                                         }
-                                    }} whileHover={{scale: 1.1}}>
+                                    }} whileHover={{scale: 1.1}} key={index}>
                                         < StackIcon size={24} color={icon.color}/>
                                     </motion.div>
                                 )
@@ -95,7 +97,7 @@ export function ProjectAccordion(props: {
                     >
                             <motion.div variants={{ collapsed: { scale: 0.8 }, open: { scale: 1 } }}
                                         transition={{ duration: 0.8 }} className={`flex flex-col xl:flex-row mt-3`}>
-                                    <h1 className={`${currentTheme.textSecondary}`}>{props.project.description}</h1>
+                                    <h1 className={`${currentTheme.textSecondary}`}>{t(`${props.project.description}`)}</h1>
                             </motion.div>
                     </motion.section>
                 )}
