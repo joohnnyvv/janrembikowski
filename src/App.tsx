@@ -35,8 +35,10 @@ function App() {
 
     const location = useLocation();
 
+    // @ts-ignore
     useEffect(() => {
         setCurrentTheme(themes[theme])
+        // eslint-disable-next-line
     }, [theme]);
 
     if (!element) return null;
