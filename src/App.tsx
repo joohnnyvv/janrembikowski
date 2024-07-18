@@ -78,11 +78,13 @@ function App() {
                         <FaChevronUp
                             size={30} className={`${currentTheme.text}`}/>
                     </Link>)}
-                <Link to={nextPath}
-                      className={`cursor-pointer ${currentTheme.background} border flex items-center px-3`}>
-                    <FaChevronDown
-                        size={30} className={`${currentTheme.text}`}/>
-                </Link>
+                {location.pathname !== '/projects' && (
+                    <Link to={nextPath}
+                          className={`cursor-pointer ${currentTheme.background} border flex items-center px-3`}>
+                        <FaChevronDown
+                            size={30} className={`${currentTheme.text}`}/>
+                    </Link>
+                )}
             </motion.div>
         </div>
     );
