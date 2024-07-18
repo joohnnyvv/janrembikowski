@@ -16,7 +16,7 @@ import libraryMgmtImg from '../assets/library-management.png';
 import yAppImg from '../assets/y-app.png';
 import fishImg from '../assets/fish-monsters.png';
 
-export interface Project {
+export interface PrivateProject {
     name: string,
     url: string,
     img?: string,
@@ -24,7 +24,14 @@ export interface Project {
     stackIcons: { icon: IconType, color: string }[]
 }
 
-export const projects: Project[] = [{
+export interface CommercialProject {
+    name: string,
+    description: string,
+    stack: string[],
+    responsibilities: string[]
+}
+
+export const projects: PrivateProject[] = [{
     name: 'Ableton Setlist Manager',
     url: 'https://github.com/joohnnyvv/ableton-setlist-manager-web',
     img: abletonImg,
@@ -61,3 +68,22 @@ export const projects: Project[] = [{
     description: 'projects.desc.y',
     stackIcons: [{icon: FaReact, color: '#61DAFB'}, {icon: SiAndroid, color: '#3DDC84'}, {icon: SiKotlin, color: '#0095D5'}, {icon: SiJetpackcompose, color: '#4285F4'}, {icon: FaJava, color: '#007396'}, {icon: SiSpringboot, color: '#6DB33F'}, {icon: FaDocker, color: '#2496ED'}, {icon: SiMicrosoftazure, color: '#0078D4'}]
 }]
+
+export const commercialProjects: CommercialProject[] = [
+    {
+        name: 'e-signature app',
+        description: 'A Polish client application that allows both individuals and companies to store, view and authorize the signing of documents. Authorization consisted of adding an identity document and verification through a selfie or video call.',
+        stack: ['Angular', 'Java', 'Spring', 'Microsoft SQL Server'],
+        responsibilities: ['I implemented accessibility according to WCAG standards', 'I added sorting and filtering of documents on the page', 'I optimized the loading of long lists of documents and added pagination']
+    }, {
+        name: 'energy bank management app',
+        description: 'Solution to collect, distribute and settle production and consumption data from the roof with integrated solar cells and the subsequent distribution to the individual housing units. This will be done by setting up smart meters and connecting via mobile data network in a platform and user interface for the housing association and the individual resident.',
+        stack: ['Kotlin', 'Android', 'iOS', 'Swift', 'Angular', 'Java', 'Spring'],
+        responsibilities: ['I worked on improving the calculations carried out on the backend regarding the transfer of energy from solar panels', 'I have made changes regarding data visualization on charts in mobile applications and in the administrative web application']
+    }, {
+        name: 'power plant energy management app',
+        description: 'System that integrates several types of power sources to give a reliable overall power supply. The sources often form a cluster of different types of dispatchable and non-dispatchable, controllable or flexible load, distributed generation (DG), small-scale wind power plants (WPP)s, photovoltaics (PVs), run-of-river hydroelectricity plants, small hydro, biomass, back-up gensets, and energy storage systems (ESS).',
+        stack: ['Angular', 'Java', 'Spring', 'PostgreSQL'],
+        responsibilities: ['I worked on migrating Angular and Java to version 17 ', 'I wrote E2E tests for a web application using the Cypress tool', 'I have implemented changes related to errors in displaying data representation in the administrative application']
+    }
+]

@@ -1,4 +1,4 @@
-import {Project} from "../consts/projects";
+import {PrivateProject} from "../consts/projects";
 import {AnimatePresence, color, motion} from "framer-motion";
 import {useAtom} from "jotai/index";
 import {currentThemeAtom, themeAtom} from "../atoms/theme";
@@ -7,7 +7,7 @@ import React from "react";
 import {useTranslation} from "react-i18next";
 
 export function ProjectAccordion(props: {
-    project: Project,
+    project: PrivateProject,
     i: number,
     expanded: false | number,
     setExpanded: React.Dispatch<React.SetStateAction<number>>

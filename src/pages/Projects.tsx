@@ -7,6 +7,7 @@ import React, {useState} from "react";
 import {ProjectAccordion} from "../components/ProjectAccordion";
 import {ReactTyped} from "react-typed";
 import {ParallaxText} from "../components/ParallaxText";
+import {ProjectCard} from "../components/ProjectCard";
 
 export function Projects() {
     const {t, i18n} = useTranslation();
@@ -36,7 +37,7 @@ export function Projects() {
             className={`w-screen min-h-screen pb-16 pt-28 flex flex-col gap-16 justify-center items-center lg:items-start relative ${currentTheme.background}`}
             onAnimationComplete={() => setInitAnimComplete(true)}
         >
-            <ParallaxText baseVelocity={8}>
+            <ParallaxText baseVelocity={2}>
                 PRIVATE PROJECTS
             </ParallaxText>
             <motion.img
@@ -60,9 +61,12 @@ export function Projects() {
                     />
                 ))}
             </div>
-            <ParallaxText baseVelocity={8}>
+            <ParallaxText baseVelocity={2}>
                 COMMERCIAL PROJECTS
             </ParallaxText>
+            <div className={`w-screen px-6 md:px-24 lg:px-64`}>
+                <ProjectCard />
+            </div>
         </motion.div>
     );
 }

@@ -37,8 +37,8 @@ export function ParallaxText({ children, baseVelocity }: ParallaxProps) {
         baseX.set(baseX.get() + moveBy);
     });
     return (
-        <div className="overflow-hidden m-0 whitespace-nowrap flex mt-16">
-            <motion.div className={`font-bold ${currentTheme.text} text-5xl`} style={{ x }}>
+        <div className="overflow-hidden whitespace-nowrap flex mt-6">
+            <motion.div className={`font-bold ${currentTheme.text} text-4xl`} style={{ x }}>
                 <span>{children} </span>
                 <span>{children} </span>
                 <span>{children} </span>

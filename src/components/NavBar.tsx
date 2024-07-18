@@ -3,7 +3,7 @@ import React from "react";
 import {useTranslation} from "react-i18next";
 import {useAtom} from "jotai/index";
 import {currentThemeAtom, themeAtom} from "../atoms/theme";
-import {FaLanguage} from "react-icons/fa6";
+import { TbFileCv } from "react-icons/tb";
 import {motion} from "framer-motion";
 import {Link} from "react-router-dom";
 import {ReactTyped} from "react-typed";
@@ -35,13 +35,14 @@ export function NavBar(props: { header: string }) {
             </h1>
             <div className={`flex gap-4`}>
                 <motion.div whileHover={{scale: 1.1}} className='flex items-center mt-0 gap-4'>
-                    <FaLanguage
-                        onClick={() => {
-                            changeLanguage(i18n.language === 'en' ? 'pl' : 'en');
-                        }}
-                        size={40}
-                        className={`${currentTheme.text} cursor-pointer`}
-                    />
+                    {/*<FaLanguage*/}
+                    {/*    onClick={() => {*/}
+                    {/*        changeLanguage(i18n.language === 'en' ? 'pl' : 'en');*/}
+                    {/*    }}*/}
+                    {/*    size={40}*/}
+                    {/*    className={`${currentTheme.text} cursor-pointer`}*/}
+                    {/*/>*/}
+                    <a href='/jan rembikowski cv.pdf' download='/jan rembikowski cv.pdf'><TbFileCv size={40} className={`${currentTheme.text} cursor-pointer`}/></a>
                 </motion.div>
                 <motion.div whileHover={{scale: 1.1}} className='flex items-center mt-0 gap-4'>
                     {theme === 'light' ? (
