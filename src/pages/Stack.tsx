@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion';
-import React, {useState, useRef, useEffect} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {useAtom} from "jotai";
 import {currentThemeAtom, themeAtom} from "../atoms/theme";
 import {skills} from "../consts/skills";
@@ -10,8 +10,8 @@ export function Stack() {
     const [theme] = useAtom(themeAtom);
     const [currentTheme] = useAtom(currentThemeAtom);
     const [initialAnimEnd, setInitialAnimEnd] = useState(false);
-    const [rectangleDrawn, setRectangleDrawn] = useState(false);
-    const {t, i18n} = useTranslation();
+    const [, setRectangleDrawn] = useState(false);
+    const {t} = useTranslation();
     const containerRef = useRef<HTMLDivElement>(null);
     const [dimensions, setDimensions] = useState({width: 0, height: 0});
     const [skillHovered, setSkillHovered] = useState(false);

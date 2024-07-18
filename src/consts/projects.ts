@@ -3,7 +3,8 @@ import {FaDocker, FaJava, FaNode, FaPython, FaReact} from "react-icons/fa";
 import {
     SiAndroid,
     SiJetpackcompose,
-    SiKotlin, SiMicrosoftazure,
+    SiKotlin,
+    SiMicrosoftazure,
     SiScikitlearn,
     SiScipy,
     SiSpringboot,
@@ -36,19 +37,28 @@ export const projects: PrivateProject[] = [{
     url: 'https://github.com/joohnnyvv/ableton-setlist-manager-web',
     img: abletonImg,
     description: 'projects.desc.ableton',
-    stackIcons: [{icon: FaReact, color: '#61DAFB'}, {icon: SiTypescript, color: '#007ACC'}, {icon: FaNode, color: '#4B9642'}]
+    stackIcons: [{icon: FaReact, color: '#61DAFB'}, {icon: SiTypescript, color: '#007ACC'}, {
+        icon: FaNode,
+        color: '#4B9642'
+    }]
 }, {
     name: 'Fish Monsters',
     url: 'https://github.com/joohnnyvv/FishMonsters',
     img: fishImg,
     description: 'projects.desc.fish',
-    stackIcons: [{icon: SiAndroid, color: '#3DDC84'}, {icon: SiKotlin, color: '#0095D5'}, {icon: SiJetpackcompose, color: '#4285F4'}]
+    stackIcons: [{icon: SiAndroid, color: '#3DDC84'}, {icon: SiKotlin, color: '#0095D5'}, {
+        icon: SiJetpackcompose,
+        color: '#4285F4'
+    }]
 }, {
     name: 'Breath Guard',
     url: 'https://github.com/joohnnyvv/breath-guard',
     img: breathGuardImg,
     description: 'projects.desc.breath',
-    stackIcons: [{icon: FaPython, color: '#3776AB'}, {icon: FaReact, color: '#61DAFB'}, {icon: SiScikitlearn, color: '#F7931E'}, {icon: SiScipy, color: '#8CAAE6'}]
+    stackIcons: [{icon: FaPython, color: '#3776AB'}, {icon: FaReact, color: '#61DAFB'}, {
+        icon: SiScikitlearn,
+        color: '#F7931E'
+    }, {icon: SiScipy, color: '#8CAAE6'}]
 }, {
     name: 'Image to ASCII',
     url: 'https://github.com/joohnnyvv/image_to_ascii_converter',
@@ -66,7 +76,13 @@ export const projects: PrivateProject[] = [{
     url: 'https://github.com/joohnnyvv/y-web-app',
     img: yAppImg,
     description: 'projects.desc.y',
-    stackIcons: [{icon: FaReact, color: '#61DAFB'}, {icon: SiAndroid, color: '#3DDC84'}, {icon: SiKotlin, color: '#0095D5'}, {icon: SiJetpackcompose, color: '#4285F4'}, {icon: FaJava, color: '#007396'}, {icon: SiSpringboot, color: '#6DB33F'}, {icon: FaDocker, color: '#2496ED'}, {icon: SiMicrosoftazure, color: '#0078D4'}]
+    stackIcons: [{icon: FaReact, color: '#61DAFB'}, {icon: SiAndroid, color: '#3DDC84'}, {
+        icon: SiKotlin,
+        color: '#0095D5'
+    }, {icon: SiJetpackcompose, color: '#4285F4'}, {icon: FaJava, color: '#007396'}, {
+        icon: SiSpringboot,
+        color: '#6DB33F'
+    }, {icon: FaDocker, color: '#2496ED'}, {icon: SiMicrosoftazure, color: '#0078D4'}]
 }]
 
 export const commercialProjects: CommercialProject[] = [

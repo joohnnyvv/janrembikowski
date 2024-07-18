@@ -1,5 +1,5 @@
 import {PrivateProject} from "../consts/projects";
-import {AnimatePresence, color, motion} from "framer-motion";
+import {AnimatePresence, motion} from "framer-motion";
 import {useAtom} from "jotai/index";
 import {currentThemeAtom, themeAtom} from "../atoms/theme";
 import {ReactTyped} from "react-typed";
@@ -15,9 +15,9 @@ export function ProjectAccordion(props: {
 }) {
     const isOpen = props.i === props.expanded;
     const [currentTheme] = useAtom(currentThemeAtom);
-    const [theme, setTheme] = useAtom(themeAtom);
-    const [expandComplete, setExpandComplete] = React.useState(false);
-    const {t, i18n} = useTranslation();
+    const [theme] = useAtom(themeAtom);
+    const [, setExpandComplete] = React.useState(false);
+    const {t} = useTranslation();
 
     return (
         <div className={`flex w-full flex-col`}>
@@ -85,20 +85,20 @@ export function ProjectAccordion(props: {
                         animate="open"
                         exit="collapsed"
                         variants={{
-                            open: { opacity: 1, height: "auto" },
-                            collapsed: { opacity: 0, height: 0 }
+                            open: {opacity: 1, height: "auto"},
+                            collapsed: {opacity: 0, height: 0}
                         }}
-                        transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
+                        transition={{duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98]}}
                         className={`px-2`}
                         onAnimationStart={() => setExpandComplete(false)}
                         onAnimationComplete={() => {
                             setExpandComplete(true)
                         }}
                     >
-                            <motion.div variants={{ collapsed: { scale: 0.8 }, open: { scale: 1 } }}
-                                        transition={{ duration: 0.8 }} className={`flex flex-col xl:flex-row mt-3`}>
-                                    <h1 className={`${currentTheme.textSecondary}`}>{t(`${props.project.description}`)}</h1>
-                            </motion.div>
+                        <motion.div variants={{collapsed: {scale: 0.8}, open: {scale: 1}}}
+                                    transition={{duration: 0.8}} className={`flex flex-col xl:flex-row mt-3`}>
+                            <h1 className={`${currentTheme.textSecondary}`}>{t(`${props.project.description}`)}</h1>
+                        </motion.div>
                     </motion.section>
                 )}
             </AnimatePresence>

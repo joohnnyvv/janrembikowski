@@ -7,11 +7,9 @@ import {contactItems} from "../consts/contact";
 import {motion} from "framer-motion";
 // @ts-ignore
 import Donut from 'react-spinning-donut';
-import {Link} from "react-router-dom";
-import {FaChevronDown} from "react-icons/fa6";
 
 export function WelcomePage() {
-    const {t, i18n} = useTranslation();
+    const {t} = useTranslation();
     const [theme] = useAtom(themeAtom);
     const [currentTheme] = useAtom(currentThemeAtom);
     const [presentationCompleted, setPresentationCompleted] = useState<boolean>(false);

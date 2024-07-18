@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub, FaFacebook, FaEnvelope } from 'react-icons/fa';
+import {FaEnvelope, FaFacebook, FaGithub, FaLinkedin} from 'react-icons/fa';
 import {IconType} from "react-icons";
 
 interface ContactItem {

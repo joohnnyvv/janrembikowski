@@ -3,20 +3,17 @@ import React from "react";
 import {useTranslation} from "react-i18next";
 import {useAtom} from "jotai/index";
 import {currentThemeAtom, themeAtom} from "../atoms/theme";
-import { TbFileCv } from "react-icons/tb";
+import {TbFileCv} from "react-icons/tb";
 import {motion} from "framer-motion";
 import {Link} from "react-router-dom";
 import {ReactTyped} from "react-typed";
 import {MdDarkMode, MdOutlineDarkMode} from "react-icons/md";
 
 export function NavBar(props: { header: string }) {
-    const {t, i18n} = useTranslation();
+    const {t} = useTranslation();
     const [currentTheme] = useAtom(currentThemeAtom);
     const [theme, setTheme] = useAtom(themeAtom);
 
-    const changeLanguage = (lng: string) => {
-        i18n.changeLanguage(lng);
-    };
     return (
         <div
             className={`w-screen z-10 h-20 ${currentTheme.background} flex flex-row justify-between px-8 md:px-24 py-5 items-center fixed`}>
@@ -42,7 +39,8 @@ export function NavBar(props: { header: string }) {
                     {/*    size={40}*/}
                     {/*    className={`${currentTheme.text} cursor-pointer`}*/}
                     {/*/>*/}
-                    <a href='/jan rembikowski cv.pdf' download='/jan rembikowski cv.pdf'><TbFileCv size={40} className={`${currentTheme.text} cursor-pointer`}/></a>
+                    <a href='/jan rembikowski cv.pdf' download='/jan rembikowski cv.pdf'><TbFileCv size={40}
+                                                                                                   className={`${currentTheme.text} cursor-pointer`}/></a>
                 </motion.div>
                 <motion.div whileHover={{scale: 1.1}} className='flex items-center mt-0 gap-4'>
                     {theme === 'light' ? (

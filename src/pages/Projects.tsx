@@ -1,18 +1,14 @@
 import {motion} from 'framer-motion';
 import {projects} from "../consts/projects";
-import {useTranslation} from "react-i18next";
 import {useAtom} from "jotai";
-import {currentThemeAtom, themeAtom} from "../atoms/theme";
+import {currentThemeAtom} from "../atoms/theme";
 import React, {useState} from "react";
 import {ProjectAccordion} from "../components/ProjectAccordion";
-import {ReactTyped} from "react-typed";
 import {ParallaxText} from "../components/ParallaxText";
 import {ProjectCard} from "../components/ProjectCard";
 
 export function Projects() {
-    const {t, i18n} = useTranslation();
     const [currentTheme] = useAtom(currentThemeAtom);
-    const [theme, setTheme] = useAtom(themeAtom);
     const [expanded, setExpanded] = useState<number>(0);
     const [initAnimComplete, setInitAnimComplete] = React.useState(false);
 
@@ -65,7 +61,7 @@ export function Projects() {
                 COMMERCIAL PROJECTS
             </ParallaxText>
             <div className={`w-screen px-6 md:px-24 lg:px-64`}>
-                <ProjectCard />
+                <ProjectCard/>
             </div>
         </motion.div>
     );

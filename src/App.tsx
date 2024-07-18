@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import {useAtom} from 'jotai';
 import {currentThemeAtom, themeAtom} from './atoms/theme';
 import {themes} from "./consts/theme";
 import {NavBar} from "./components/NavBar";
 import {WelcomePage} from "./pages/WelcomePage";
-import {BrowserRouter, Link, useLocation, useRoutes} from "react-router-dom";
+import {Link, useLocation, useRoutes} from "react-router-dom";
 import {AnimatePresence, motion} from "framer-motion";
 import {FaChevronDown} from "react-icons/fa6";
 import {Stack} from "./pages/Stack";
@@ -41,7 +41,7 @@ function App() {
 
     if (!element) return null;
 
-    const headerMap:{ [key: string]: string } = {
+    const headerMap: { [key: string]: string } = {
         "/": "pageHeader.home",
         "/stack": "pageHeader.stack",
         "/projects": "pageHeader.projects",
@@ -71,11 +71,13 @@ function App() {
                 className={`fixed bottom-4 flex h-12 justify-center w-screen gap-16 align-center`}
             >
                 {location.pathname !== "/" && (
-                    <Link to={prevPath} className={`cursor-pointer ${currentTheme.background} border flex items-center px-3 z-50`}>
+                    <Link to={prevPath}
+                          className={`cursor-pointer ${currentTheme.background} border flex items-center px-3 z-50`}>
                         <FaChevronUp
                             size={30} className={`${currentTheme.text}`}/>
                     </Link>)}
-                <Link to={nextPath} className={`cursor-pointer ${currentTheme.background} border flex items-center px-3`}>
+                <Link to={nextPath}
+                      className={`cursor-pointer ${currentTheme.background} border flex items-center px-3`}>
                     <FaChevronDown
                         size={30} className={`${currentTheme.text}`}/>
                 </Link>

@@ -1,18 +1,26 @@
-import {useAnimationFrame, useMotionValue, useScroll, useSpring, useTransform, useVelocity, wrap, motion} from "framer-motion";
+import {
+    motion,
+    useAnimationFrame,
+    useMotionValue,
+    useScroll,
+    useSpring,
+    useTransform,
+    useVelocity,
+    wrap
+} from "framer-motion";
 import {useRef} from "react";
 import {useAtom} from "jotai/index";
-import {currentThemeAtom, themeAtom} from "../atoms/theme";
+import {currentThemeAtom} from "../atoms/theme";
 
 interface ParallaxProps {
     children: string;
     baseVelocity: number;
 }
 
-export function ParallaxText({ children, baseVelocity }: ParallaxProps) {
+export function ParallaxText({children, baseVelocity}: ParallaxProps) {
     const [currentTheme] = useAtom(currentThemeAtom);
-    const [theme, setTheme] = useAtom(themeAtom);
     const baseX = useMotionValue(0);
-    const { scrollY } = useScroll();
+    const {scrollY} = useScroll();
     const scrollVelocity = useVelocity(scrollY);
     const smoothVelocity = useSpring(scrollVelocity, {
         damping: 50,
@@ -38,7 +46,7 @@ export function ParallaxText({ children, baseVelocity }: ParallaxProps) {
     });
     return (
         <div className="overflow-hidden whitespace-nowrap flex mt-6">
-            <motion.div className={`font-bold ${currentTheme.text} text-4xl`} style={{ x }}>
+            <motion.div className={`font-bold ${currentTheme.text} text-4xl`} style={{x}}>
                 <span>{children} </span>
                 <span>{children} </span>
                 <span>{children} </span>

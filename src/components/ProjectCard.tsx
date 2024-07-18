@@ -1,7 +1,5 @@
-import { IoMdClose } from "react-icons/io";
 import {useAtom} from "jotai/index";
-import {currentThemeAtom, themeAtom} from "../atoms/theme";
-import { FaFileSignature } from "react-icons/fa6";
+import {currentThemeAtom} from "../atoms/theme";
 import React, {useState} from "react";
 import {FaTerminal} from "react-icons/fa";
 import {commercialProjects} from "../consts/projects";
@@ -9,20 +7,19 @@ import {motion} from "framer-motion";
 import {ReactTyped} from "react-typed";
 
 const cliFiles = [{
-        name: "project-description.txt",
-        color: 'text-green-700'
-    }, {
-        name: "responsibilites.txt",
-        color: 'text-blue-700'
-    }, {
-        name: "stack.txt",
-        color: 'text-red-700'
-    }
+    name: "project-description.txt",
+    color: 'text-green-700'
+}, {
+    name: "responsibilites.txt",
+    color: 'text-blue-700'
+}, {
+    name: "stack.txt",
+    color: 'text-red-700'
+}
 ]
 
-const FileContent = (props: {fileIndex: number, projectIndex: number}): JSX.Element => {
+const FileContent = (props: { fileIndex: number, projectIndex: number }): JSX.Element => {
     const [currentTheme] = useAtom(currentThemeAtom);
-    const [theme, setTheme] = useAtom(themeAtom);
 
     if (props.fileIndex === 0) {
         return (
@@ -55,7 +52,6 @@ const FileContent = (props: {fileIndex: number, projectIndex: number}): JSX.Elem
 
 export function ProjectCard() {
     const [currentTheme] = useAtom(currentThemeAtom);
-    const [theme, setTheme] = useAtom(themeAtom);
     const [selectedProjectIndex, setSelectedProjectIndex] = useState(-1);
     const [selectedFileIndex, setSelectedFileIndex] = useState(-1);
 
@@ -70,11 +66,11 @@ export function ProjectCard() {
             <div className="w-full flex flex-col gap-2 justify-between px-6 py-3 overflow-y-scroll">
                 <p>
                     <ReactTyped
-                    cursorChar="_"
-                    startDelay={100}
-                    strings={["> ~/Projects ls"]}
-                    typeSpeed={40}
-                />
+                        cursorChar="_"
+                        startDelay={100}
+                        strings={["> ~/Projects ls"]}
+                        typeSpeed={40}
+                    />
                 </p>
                 <div className="flex gap-5">
                     {commercialProjects.map((project, index) => (
