@@ -35,6 +35,10 @@ function App() {
 
     const location = useLocation();
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location.pathname])
+
     // @ts-ignore
     useEffect(() => {
         setCurrentTheme(themes[theme])

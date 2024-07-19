@@ -56,7 +56,9 @@ export function ProjectCard() {
     const [selectedFileIndex, setSelectedFileIndex] = useState(-1);
 
     return (
-        <div className={`w-full h-96 border self-center mb-4 flex flex-col`}>
+        <motion.div initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0, transition: {duration: 2} }}
+                    viewport={{ once: true }} className={`w-full h-96 border self-center mb-4 flex flex-col`}>
             <div className={`w-full flex justify-between px-6 py-3 border-b`}>
                 <div className={`size-full flex gap-4`}>
                     <FaTerminal className={`${currentTheme.text}`} size={30}/>
@@ -114,6 +116,6 @@ export function ProjectCard() {
                     </>
                 )}
             </div>
-        </div>
+        </motion.div>
     )
 }
