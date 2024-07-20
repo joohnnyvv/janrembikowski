@@ -26,6 +26,6 @@ export const contactItems: Record<string, ContactItem> = {
     email: {
         id: 4,
         icon: FaEnvelope,
-        url: 'mailto:janekrembikowski@example.com',
+        url: 'mailto:janekrembikowski@gmail.com',
     },
 };
