@@ -24,7 +24,7 @@ export function Projects() {
             animate="animate"
             exit="exit"
             variants={variants}
-            className={`w-screen min-h-screen pb-16 pt-28 flex flex-col gap-16 justify-center items-center lg:items-start overflow-x-hidden relative ${currentTheme.background}`}
+            className={`w-screen min-h-screen pb-16 pt-28 flex flex-col gap-8 justify-center items-center lg:items-start overflow-x-hidden relative ${currentTheme.background}`}
             onAnimationComplete={() => setInitAnimComplete(true)}
         >
             <ParallaxText baseVelocity={2}>

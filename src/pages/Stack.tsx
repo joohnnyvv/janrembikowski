@@ -61,7 +61,7 @@ export function Stack() {
             animate="animate"
             exit="exit"
             variants={variants}
-            className="w-screen pb-16 pt-28 px-8 md:px-24 flex flex-col justify-center items-center lg:flex-row lg:items-start relative "
+            className="w-screen pb-8 pt-28 px-8 md:px-24 flex flex-col justify-center items-center lg:flex-row lg:items-start relative "
             onAnimationComplete={() => setInitialAnimEnd(true)}
         >
             {initialAnimEnd && (

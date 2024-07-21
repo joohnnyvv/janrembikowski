@@ -5,13 +5,14 @@ import {themes} from "./consts/theme";
 import {NavBar} from "./components/NavBar";
 import {WelcomePage} from "./pages/WelcomePage";
 import {Link, useLocation, useRoutes} from "react-router-dom";
-import {AnimatePresence, motion} from "framer-motion";
+import {AnimatePresence, motion, useScroll} from "framer-motion";
 import {FaChevronDown} from "react-icons/fa6";
 import {Stack} from "./pages/Stack";
 import {FaChevronUp} from "react-icons/fa";
 import {Projects} from "./pages/Projects";
 
 function App() {
+    const { scrollYProgress } = useScroll();
     const [theme] = useAtom(themeAtom);
     const [currentTheme, setCurrentTheme] = useAtom(currentThemeAtom);
 
@@ -90,6 +91,10 @@ function App() {
                     </Link>
                 )}
             </motion.div>
+            <motion.div
+                style={{scaleX: scrollYProgress}}
+                className={`fixed bottom-0 right-0 left-0 h-1 bg-${theme === 'light' ? 'black' : 'white'}`}
+            />
         </div>
     );
 }

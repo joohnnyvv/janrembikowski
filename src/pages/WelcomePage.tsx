@@ -48,7 +48,7 @@ export function WelcomePage() {
                 animate="animate"
                 exit="exit"
                 variants={variants}>
-                <div className="w-full lg:w-1/2 text-center lg:text-left lg:flex lg:flex-col lg:items-start">
+                <div className="w-full min-h-96 lg:w-1/2 text-center lg:text-left lg:flex lg:flex-col lg:items-start">
                     <h1 className={`text-5xl md:text-7xl lg:text-9xl tracking-wider ${currentTheme.text}`}>
                         <ReactTyped
                             showCursor={false}

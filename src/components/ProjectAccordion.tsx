@@ -32,7 +32,7 @@ export function ProjectAccordion(props: {
                         : (theme === 'light' ? "#000000" : "#ffffff")
                 }}
                 onClick={() => props.i !== props.expanded && props.setExpanded(props.i)}
-                className={`h-14 px-2 w-full ${currentTheme.text} border flex justify-between overflow-x-scroll items-center`}
+                className={`h-14 px-2 w-full ${currentTheme.text} border flex justify-between overflow-x-scroll cursor-pointer items-center`}
             >
                 {props.initAnimComplete && (
                     <>
@@ -98,9 +98,8 @@ export function ProjectAccordion(props: {
                         <motion.div variants={{collapsed: {scale: 0.8}, open: {scale: 1}}}
                                     transition={{duration: 0.8}} className={`flex flex-col gap-2 mt-2`}>
                             <h1 className={`${currentTheme.textSecondary}`}>{t(`${props.project.description}`)}</h1>
-                            <a href={props.project.url} target='_blank' className={`${currentTheme.text} self-center cursor-pointer ${theme === 'light' ? 'hover:bg-gray-100' : 'hover:bg-gray-900'} md:self-end px-1 py-2 w-full md:w-48 flex justify-center border rounded-sm`}>{t('projects.repo')}</a>
+                            <a href={props.project.url} target='_blank' rel="noreferrer" className={`${currentTheme.text} self-center cursor-pointer ${theme === 'light' ? 'hover:bg-gray-100' : 'hover:bg-gray-900'} md:self-end px-1 py-2 w-full md:w-48 flex justify-center border rounded-sm`}>{t('projects.repo')}</a>
                         </motion.div>
-
                     </motion.section>
                 )}
             </AnimatePresence>
