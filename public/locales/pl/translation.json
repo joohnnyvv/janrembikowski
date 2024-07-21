@@ -14,6 +14,7 @@
     "bio": "> fullstack developer i muzyk, łączący zamiłowanie do programowania i kreatywność, by tworzyć niekonwencjonalne cyfrowe doświadczenia."
   },
   "projects": {
+    "repo": "Repozytorium GitHub",
     "desc": {
       "ableton": "Ableton Setlist Manager to oparta na React aplikacja webowa zaprojektowana do współpracy z serwerem Setlist Management Server w celu zarządzania setlistami i kontrolowania odtwarzania w Ableton Live. Zapewnia intuicyjny interfejs użytkownika do interakcji z Ableton Live i uzyskiwania dostępu do aktualizacji w czasie rzeczywistym za pośrednictwem komunikacji WebSocket.",
       "fish": "Gra mobilna na platformę Android pozwalająca odkrywać alternatywną wodną rzeczywistość pełną potworów i nagród. Rozgrywka polega na chodzeniu po okolicy i unikaniu wodnych potworów, aplikacja została stworzona przy użyciu Google Maps API.",

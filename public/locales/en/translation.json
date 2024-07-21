@@ -14,6 +14,7 @@
     "bio": "> fullstack developer and musician, combining programming and creativity to create complex digital experiences."
   },
   "projects": {
+    "repo": "GitHub Repository",
     "desc": {
       "ableton": "The Ableton Setlist Manager is a React-based client application designed to work in tandem with the Setlist Management Server for managing setlists and controlling playback in Ableton Live. It provides an intuitive user interface for interacting with Ableton Live and accessing real-time updates through WebSocket communication.",
       "fish": "A mobile game for the android platform allowing you to explore an alternative aquatic reality full of monsters and rewards. The gameplay involves walking around the neighborhood and avoiding water monsters, the application was developed using the Google Maps API.",

@@ -18,12 +18,6 @@ export function Projects() {
         exit: {y: -3000, transition: {duration: 1}},
     };
 
-    const imageVariants = {
-        initial: {opacity: 0, scale: 0.8},
-        animate: {opacity: 1, scale: 1, transition: {duration: 0.5}},
-        exit: {opacity: 0, scale: 0.8, transition: {duration: 0.5}},
-    };
-
     return (
         <motion.div
             initial="initial"
@@ -36,15 +30,6 @@ export function Projects() {
             <ParallaxText baseVelocity={2}>
                 PRIVATE PROJECTS
             </ParallaxText>
-            <motion.img
-                key={projects[expanded].img}
-                src={projects[expanded].img}
-                className={`w-full md:w-auto md:h-80 self-center border`}
-                variants={imageVariants}
-                initial="initial"
-                animate="animate"
-                exit="exit"
-            />
             <div className={`grid grid-cols-1 lg:grid-cols-1 gap-8 w-full lg:px-48`}>
                 {projects.map((project, index) => (
                     <ProjectAccordion
