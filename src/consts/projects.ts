@@ -8,7 +8,8 @@ import {
     SiScikitlearn,
     SiScipy,
     SiSpringboot,
-    SiTypescript
+    SiTypescript,
+    SiJupyter
 } from "react-icons/si";
 import abletonImg from '../assets/ableton-manager.png';
 import breathGuardImg from '../assets/breath-guard.png';
@@ -16,6 +17,7 @@ import imageToAsciiImg from '../assets/image-to-ascii.jpeg';
 import libraryMgmtImg from '../assets/library-management.png';
 import yAppImg from '../assets/y-app.png';
 import fishImg from '../assets/fish-monsters.png';
+import covidImg from '../assets/covid-predictor.jpeg';
 
 export interface PrivateProject {
     name: string,
@@ -50,6 +52,12 @@ export const projects: PrivateProject[] = [{
         icon: SiJetpackcompose,
         color: '#4285F4'
     }]
+}, {
+    name: 'Covid 19 Prediction Model',
+    url: 'https://github.com/joohnnyvv/covid19-predictor',
+    img: covidImg,
+    description: 'projects.desc.covid',
+    stackIcons: [{icon: SiJupyter, color: '#F37726'}, {icon: FaPython, color: '#3776AB'}]
 }, {
     name: 'Breath Guard',
     url: 'https://github.com/joohnnyvv/breath-guard',

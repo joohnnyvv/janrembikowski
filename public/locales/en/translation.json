@@ -21,7 +21,8 @@
       "breath": "BreathGuard is a react web application that uses a machine learning model to predict lung cancer risk. The graphical interface is provided through an application written in React. The machine learning model was created and trained as a college credit project.",
       "ascii": "A simple Python application that converts images into cool ASCII art. Converts images of various formats (e.g., JPG, PNG) into text-based ASCII image representation and saves the generated ASCII art to a .txt file.",
       "library": "This is a web application built using React and React Bootstrap that allows you to manage library. All data is stored locally in your browser's Local Storage. It uses a public API, making thousands of books available.",
-      "y": "An X-like application consisting of a mobile app, a web app and a backend written in java. Deployment to Azure was done via container registry. We implemented WebSocket allowing real-time comment updates."
+      "y": "An X-like application consisting of a mobile app, a web app and a backend written in java. Deployment to Azure was done via container registry. We implemented WebSocket allowing real-time comment updates.",
+      "covid": "Jupyter notebook for predicting the possibility of COVID-19 in a patient by learning a machine learning model. I used a collection of images from the University of Montreal as test and learning sets."
     }
   },
   "stack": {
